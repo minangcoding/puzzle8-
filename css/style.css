@@ -1,0 +1,65 @@
+/*Bagian Keseluruhan  */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: bor;
+}
+/*Bagian Keseluruhan  */
+
+/* Untuk H1*/
+h1{
+    color: #E4FDE1;
+    font-family: "Sofia";
+    text-align: center;
+}
+/* Untuk H1*/
+
+/*Khusus Body Saja  */
+body{
+    display: flex;
+    background-color: #114B5F;
+    text-align: center;
+    flex-direction: column; /*Main Axis Vertikal */
+    padding-top: 2%;
+}
+/*Khusus Body Saja  */
+
+/*Bagian ID ="container" */
+#container{
+    width: 500px;
+    height: 500px;
+    background: #E4FDE1;
+    margin: 10px auto;
+}
+/*Bagian ID ="container" */
+
+/*Khusus Untuk List / table (ul) */
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: space-evenly;
+    font-family: 'Audiowide';
+    color: #E4FDE1;
+}
+/*Khusus Untuk List / table (ul) */
+
+/*Bagian Gabungan list  */
+ul li {
+    background: #456990;
+    width: 30%;
+    height: 100px;
+    border: 1px solid #028090;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 3rem;
+}
+/*Bagian Gabungan list  */
+
+/* Ini Khusus Bagian Persegi Kosongnya (class="empty") */
+.empty{
+    background: #DAD4EF;
+    border: 2px solid #114B5F;
+}
+/* Ini Khusus Bagian Persegi Kosongnya */

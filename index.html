@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Untuk Linlk BOOTRAPST serta CSS-->
+    <meta http-equiv="X-UA_Compatible" content="ie=edge">
+
+    <!--INI Khusus Font Audiowide-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <!--INI Khusus Font Audiowide-->
+
+    <!--INI Khusus Font Sofia-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <!--INI Khusus Font Sofia-->
+
+       <!--Untuk Linlk BOOTRAPST serta CSS-->
+    <!-- Link Untuk File CSS-->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Link Untuk File CSS-->
+    <title>Puzzle 8</title>
+</head>
+<body>
+    <!-- Bagian Nama-->
+    <h1>Puzzle</h1>
+    <!-- Bagian Nama-->
+
+    <!--Bagian Container(id)-->
+    <div id="container">
+        <ul>
+            <li>A</li>
+            <li>B</li>
+            <li>C</li>
+            <li>D</li>
+            <li>E</li>
+            <li>F</li>
+            <li>G</li>
+            <!-- Memperbaharui persegi (H) sebelum drag end drop serta pemanggilan Javascript method-->
+            <li id="li8" draggable="true" ondragstart="dragstart_handler(event)" ondragend="dragend_handler(event)">H</li>
+            <!-- Memperbaharui persegi (H) sebelum drag end drop serta pemanggilan Javascript method-->
+
+            <!--Ini Untuk ruang Kosong-->
+            <li class="empty" id="li9" ondrop="drop_handler(event);" ondragover="dragover_handler(event);"></li>  <!-- Ini Khusus untuk persegi kosongnya-->
+             <!--Ini Untuk ruang Kosong-->
+        </ul>
+    </div>
+    <!--Bagian Container(id)-->
+    
+</body>
+<!--Ini Scrip JS(scrip.js)-->
+<script src ="js/script.js"></script>
+<!--Ini Scrip JS(scrip.js)-->
+</html>
+
