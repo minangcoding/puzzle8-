@@ -20,7 +20,7 @@ const dragover_handler = ev =>{
 //Untuk Drag (seret)
 
 //Untuk Drop
-const drop_handler = ev =>{
+const Drop_handler = ev =>{
     console.log("drag")
     ev.preventDefault();
     
@@ -41,15 +41,15 @@ const dragend_handler = ev =>{
 //untuk drag
 
 //untuk method drop_handler
-//const drop_handler = ev => {
- //   console.log("drag")
-  //  ev.preventDefault();
+const drop_handler = ev => {
+    console.log("drag")
+    ev.preventDefault();
 
     //untuk dapat Posisi serta bisa drop end Drag
-  //  const data = ev.dataTransfer.getData("text/plain");
-   //     ev.target.innerText = document.getElementById(data).innerText;
-     //   document.getElementById(data).innerText = "";
+    const data = ev.dataTransfer.getData("text/plain");
+       ev.target.innerText = document.getElementById(data).innerText;
+       document.getElementById(data).innerText = "";
     //untuk dapat Posisi serta bisa drop end Drag
-//}
+}
 
 //untuk method drop_handler
