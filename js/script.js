@@ -62,7 +62,7 @@ const setId = (items) => {
     }
 }
 
-const FillGrid = (items, letters) => {
+const fillGrid = (items, letters) => {
     items.forEach((item, i) => {
         item.innerText = letters[i];
     })
@@ -70,26 +70,6 @@ const FillGrid = (items, letters) => {
 
 fillGrid(ul, letters);
 
-//untuk method drop_handler
 
-// shuffle the array
-const shuffle = (arr) => {
-    const copy = [...arr];
-    // loop over the array
-    for(let i = 0; i < copy.length; i++) {
-        // for each index,i pick a random index j 
-        let j = parseInt(Math.random()*copy.length);
-        // swap elements at i and j
-        let temp = copy[i];
-        copy[i] = copy[j];
-        copy[j] = temp;
-    }   
-    return copy;
- }
- const fillGrid = (items, letters) => {
-    let shuffled = shuffle(letters);
 
-    items.forEach((item, i) => {
-        item.innerText = shuffled[i];
-    })
-}
+
